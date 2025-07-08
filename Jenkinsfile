@@ -1,18 +1,9 @@
 pipeline {
     agent any
-
     stages {
-        stage('Build') {
+        stage('Test') {
             steps {
-                echo 'Building...'
-            }
-        }
-        stage('Deploy to Flask VM') {
-            steps {
-                echo 'Deploying to Flask VM...'
-                // Example shell commands to deploy
-                // sh 'scp ...'
-                // sh 'ssh ...'
+                echo 'Hello from Jenkins!'
             }
         }
     }
